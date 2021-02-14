@@ -33,17 +33,11 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'confirmInstallation',
-        message: 'Would you like to enter instructions on how to install your application?',
-        default: true
-    },
-    {
         type: 'input',
-        name: 'installation instructions',
-        message: 'Enter instructions on how to install your application.',
-        when: ({ confirmInstallation }) => {
-            if (confirmAbout) {
+        name: 'installation',
+        message: 'Enter instructions on how to install your application. If not applicable, enter "N/A.',
+        validate: installationInput => {
+            if (installationInput) {
               return true;
             } else {
               return false;
@@ -53,7 +47,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Enter instructions and examples for use.',
+        message: 'Enter instructions and example of usage.',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -65,7 +59,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contribution guidelines',
+        name: 'contribution',
         message: 'Enter guidelines for how you would like others to contribute to the application.',
         validate: contributionInput => {
             if (contributionInput) {
@@ -77,16 +71,11 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'confirmTests',
-        message: 'Would you like to provide tests for your application?'
-    },
-    {
         type: 'input',
         name: 'tests',
-        message: 'Enter tests written for your application, providing examples on how to run them.',
-        when: ({ confirmTests }) => {
-            if (confirmAbout) {
+        message: 'Enter tests written for your application, providing examples on how to run them. If not applicable, enter "N/A".',
+        validate: testsInput => {
+            if (testsInput) {
               return true;
             } else {
               return false;
@@ -157,7 +146,7 @@ const writeToFile = (fileName, data) => {
 
 // TODO: Create a function to initialize app
 function init() {
-    return inquirer.prompt(questions)
+    return inquirer.prompt(questions);
 };
 
 // Function call to initialize app
@@ -166,7 +155,7 @@ init()
         return generateMarkdown(data);
     })
     .then(generateMarkdown => {
-        return writeToFile('./index.html', generateMarkdown);
+        return writeToFile('./dist/README.md', generateMarkdown);
     })
     .catch(err => {
         console.log(err);
