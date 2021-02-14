@@ -164,4 +164,10 @@ function init() {
 init()
     .then(data => {
         return generateMarkdown(data);
+    })
+    .then(generateMarkdown => {
+        return writeToFile('./index.html', generateMarkdown);
+    })
+    .catch(err => {
+        console.log(err);
     });
