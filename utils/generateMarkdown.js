@@ -15,47 +15,47 @@ module.exports = data => {
     const {license} = data;
     
     return `
-    # ${data.title}
-    ${renderLicenseBadge(license)}
+# ${data.title}
+${renderLicenseBadge(license)}
 
-    ## Description
+## Description
 
-    ${data.description}
+${data.description}
 
-    ## Table of Contents
+## Table of Contents
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-    ## Installation
+## Installation
 
-    ${data.installation}
+${data.installation}
 
-    ## Usage
-    
-    ${data.usage}
+## Usage
 
-    ## License
+${data.usage}
 
-    ${renderLicenseSection(license)}
+## License
 
-    ## Contributing
+${renderLicenseSection(license)}
 
-    ${data.contribution}
+## Contributing
 
-    ## Tests
+${data.contribution}
 
-    ${data.tests}
+## Tests
 
-    ## Questions
+${data.tests}
 
-    Contact me at:
-    [${data.username} on GitHub](https://github.com/${data.username})
-    <${data.email}>
-    `;
+## Questions
+
+Contact me at: <br/>
+[GitHub](https://github.com/${data.username})
+<${data.email}>
+`;
 }
 
