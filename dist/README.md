@@ -1,10 +1,10 @@
 
-# fd
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Sample Title
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
 
-fd
+This is the description of the project.
 
 ## Table of Contents
 
@@ -17,23 +17,23 @@ fd
 
 ## Installation
 
-fd
+These are the instructions.
 
 ## Usage
 
-fd
+These are the instructions and examples of usage.
 
 ## License
 
-Apache License 2.0
+GNU GPL v3
 
 ## Contributing
 
-fd
+These are the guidelines for future contribution.
 
 ## Tests
 
-fd
+These are the tests written for the application.
 
 ## Questions
 
