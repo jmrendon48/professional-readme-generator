@@ -1,6 +1,6 @@
 
-# Sample Title
-[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# This is the title of the project.
+[![License](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Description
 
@@ -17,19 +17,19 @@ This is the description of the project.
 
 ## Installation
 
-These are the instructions.
+These are instructions detailing how to install the application.
 
 ## Usage
 
-These are the instructions and examples of usage.
+These are instructions and examples of usage.
 
 ## License
 
-GNU GPL v3
+ISC
 
 ## Contributing
 
-These are the guidelines for future contribution.
+These are guidelines for future contribution.
 
 ## Tests
 

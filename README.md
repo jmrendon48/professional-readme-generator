@@ -6,8 +6,8 @@ A command-line application that dynamically generates a professional README.md f
 
 ## Installation 
 
-Install npm.
+Install Node.js and npm.
 
 ## Usage
 
-[Walkthrough Video](https://drive.google.com/file/d/1Z27HTRUZlDJri_Od28nzVk0no53Kccgw/view)
+[Walkthrough Video](https://drive.google.com/file/d/1iSREUFka2SKapTGYpcxtGlxUdd-pSMzu/view)
