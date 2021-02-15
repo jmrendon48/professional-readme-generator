@@ -35,7 +35,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Enter instructions on how to install your application. If not applicable, enter "N/A.',
+        message: 'Enter instructions on how to install your application. If not applicable, enter "N/a."',
         validate: installationInput => {
             if (installationInput) {
               return true;
@@ -47,7 +47,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Enter instructions and example of usage.',
+        message: 'Enter instructions and examples of usage.',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -73,7 +73,7 @@ const questions = [
     {
         type: 'input',
         name: 'tests',
-        message: 'Enter tests written for your application, providing examples on how to run them. If not applicable, enter "N/A".',
+        message: 'Enter tests written for your application, providing examples on how to run them. If not applicable, enter "N/a".',
         validate: testsInput => {
             if (testsInput) {
               return true;
